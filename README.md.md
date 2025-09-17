@@ -101,16 +101,8 @@ MNT = readFile2('data.bin');
 
 ---
 
-## 🛠 Installation
-1. Cloner le dépôt :
-   ```bash
-   git clone https://github.com/votre-repo/matlab-mnt-toolbox.git
-   ```
-2. Ajouter le dossier au chemin MATLAB :
-   ```matlab
-   addpath('chemin/vers/la/bibliothèque');
-   ```
-3. **Dépendances** :
+##  Dépendances
+
    - MATLAB R2020a ou supérieur.
    - Boîte à outils *Image Processing Toolbox* (pour SURF, SLIC).
    - Boîte à outils *Statistics and Machine Learning Toolbox* (pour Random Forest).
@@ -136,15 +128,12 @@ matlab-mnt-toolbox/
 
 ---
 
-## 📜 Licence
-Ce projet est sous licence **MIT**. Voir [LICENSE](LICENSE) pour plus de détails.
 
----
 ## 📧 Contact
 Pour toute question ou collaboration :
 - **Auteur** : Sylla Mohamed
-- **Email** : votre.email@domaine.com
-- **LinkedIn** : [votre-profil](https://linkedin.com/in/votre-profil)
+- **Email** : sylla.mohamed.ismaila@gmail.com
+- **LinkedIn** : [votre-profil](https://www.linkedin.com/in/sylla-mohamed-ismaila/)
 
 ---
 
@@ -154,7 +143,7 @@ Pour vous aider à démarrer, voici quelques exemples d'utilisation des fonction
 
 ### Exemple 1 : Segmenter un MNT et approximer les dépressions
 ```matlab
-MNT = readFile2('data.bin');
+MNT = readFile2('NomMNT.sh');
 [metrics, poly_eq] = modelisation_polynomiale_superpixels(MNT, 200, 10, true);
 ```
 
@@ -175,25 +164,6 @@ fused_image = SURFMatrice(image1, image2);
 
 ---
 
-## 📊 Benchmarks et Performance
-
-Pour évaluer les performances des fonctions, voici quelques benchmarks :
-
-### Benchmark 1 : Temps d'exécution de `modelisation_polynomiale_superpixels`
-| Taille du MNT | Temps d'exécution (s) |
-|----------------|-----------------------|
-| 100x100        | 0.5                   |
-| 500x500        | 2.3                   |
-| 1000x1000      | 8.7                   |
-
-### Benchmark 2 : Précision de `debruitage_random_forest`
-| Niveau de bruit | Précision (%) |
-|-----------------|---------------|
-| Faible          | 95            |
-| Moyen           | 90            |
-| Élevé           | 85            |
-
----
 
 ## 📝 Changelog
 
@@ -201,23 +171,11 @@ Pour évaluer les performances des fonctions, voici quelques benchmarks :
 - Ajout des fonctions de segmentation et débruitage.
 - Support initial pour la lecture des fichiers binaires.
 
-### Version 1.1.0
-- Ajout des fonctions de fusion d'images.
-- Amélioration de la documentation.
+
 
 ---
 
-## 📋 Contribution
 
-Nous welcome les contributions ! Pour contribuer à ce projet, veuillez suivre ces étapes :
-
-1. Fork le dépôt.
-2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`).
-3. Commitez vos changements (`git commit -m 'Add some AmazingFeature'`).
-4. Poussez vers la branche (`git push origin feature/AmazingFeature`).
-5. Ouvrez une Pull Request.
-
----
 
 ## 📚 Références
 
