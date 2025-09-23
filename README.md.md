@@ -1,6 +1,6 @@
 # Bibliothèque MATLAB pour le Traitement des Modèles Numériques de Terrain (MNT)
 
-Cette bibliothèque regroupe des fonctions MATLAB dédiées au **prétraitement**, **débruitage**, **segmentation**, et **modélisation** des Modèles Numériques de Terrain (MNT), avec des applications en agriculture et en télédétection.
+Cette bibliothèque regroupe des fonctions MATLAB dédiées au **prétraitement**, **débruitage**, **segmentation**, et **modélisation** des Modèles Numériques de Terrain (MNT).
 
 ---
 
@@ -129,17 +129,9 @@ matlab-mnt-toolbox/
 ---
 
 
-## 📧 Contact
-Pour toute question ou collaboration :
-- **Auteur** : Sylla Mohamed
-- **Email** : sylla.mohamed.ismaila@gmail.com
-- **LinkedIn** : [votre-profil](https://www.linkedin.com/in/sylla-mohamed-ismaila/)
-
----
 
 ## 📄 Exemples d'utilisation
 
-Pour vous aider à démarrer, voici quelques exemples d'utilisation des fonctions principales :
 
 ### Exemple 1 : Segmenter un MNT et approximer les dépressions
 ```matlab
@@ -182,5 +174,7 @@ fused_image = SURFMatrice(image1, image2);
 - [Documentation MATLAB](https://www.mathworks.com/help/index.html)
 - [Image Processing Toolbox](https://www.mathworks.com/products/image.html)
 - [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html)
+
+
 
 ---
