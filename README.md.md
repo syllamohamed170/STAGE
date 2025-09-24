@@ -23,6 +23,8 @@ Cette bibliothèque regroupe des fonctions MATLAB dédiées au **prétraitement*
 ```matlab
 [metrics, poly_eq] = modelisation_polynomiale_superpixels(MNT, 200, 10, true);
 ```
+#### [`modelisation_polynomiale_superpixels_dep.m`](https://github.com/votre-repo/modelisation_polynomiale_superpixels_dep.m)
+**Variante** : Version modifiée pour avoir un different degré d'approximation entre le contour de la surface et sa profondeur.
 
 #### [`approx_ellipsoide_dep.m`](https://github.com/votre-repo/approx_ellipsoide_dep.m)
 **Objectif** : Approximer les dépressions d’un MNT par des formes géométriques simples (ellipses, demi-ellipses).
