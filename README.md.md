@@ -80,26 +80,17 @@ MNT = readFile2('data.bin');
 
 ### 4. **Fusion et Registration d’Images**
 #### [`SURFMatrice.m`](https://github.com/votre-repo/SURFMatrice.m)
-**Objectif** : Aligner et fusionner deux images MNT usando des caractéristiques SURF.
+**Objectif** : Aligner et fusionner deux images MNT en se basant sur des caractéristiques SURF.
 **Paramètres clés** :
 - `image1`, `image2` : Matrices des images à fusionner.
 **Retourne** :
 - `fused_image` : Image fusionnée avec correction de biais.
 
 #### [`fusionSURFPourSH.m`](https://github.com/votre-repo/fusionSURFPourSH.m)
-**Variante** : Version optimisée pour les données SH (ex : images satellite).
+**Variante** : Version optimisée pour les données SH.
 
 ---
 
-### 5. **Simplification de Régions**
-#### [`simplifie.m`](https://github.com/votre-repo/simplifie.m)
-**Objectif** : Simplifier les régions d’une image binaire en cercles/rectangles.
-**Paramètres clés** :
-- `binary_image` : Image binaire d’entrée.
-**Retourne** :
-- `simplified_image` : Image avec formes géométriques simplifiées.
-
----
 
 ##  Dépendances
 
