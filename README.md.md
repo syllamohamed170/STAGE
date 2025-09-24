@@ -9,11 +9,13 @@ Cette bibliothèque regroupe des fonctions MATLAB dédiées au **prétraitement*
 ### 1. **Segmentation et Modélisation**
 #### [`modelisation_polynomiale_superpixels.m`](https://github.com/votre-repo/modelisation_polynomiale_superpixels.m)
 **Objectif** : Segmenter un MNT en superpixels (algorithme SLIC), détecter les dépressions, et approximer les régions par des surfaces polynomiales.
+
 **Paramètres clés** :
 - `MNT` : Matrice du modèle numérique de terrain.
 - `n_superpixels` : Nombre de superpixels souhaités.
 - `compactness` : Paramètre de compacité pour SLIC.
 - `visualize` : Booléen pour afficher les résultats.
+
 **Retourne** :
 - Métriques des régions (aire, volume).
 - Équations polynomiales pour chaque région.
@@ -24,13 +26,16 @@ Cette bibliothèque regroupe des fonctions MATLAB dédiées au **prétraitement*
 [metrics, poly_eq] = modelisation_polynomiale_superpixels(MNT, 200, 10, true);
 ```
 #### [`modelisation_polynomiale_superpixels_dep.m`](https://github.com/votre-repo/modelisation_polynomiale_superpixels_dep.m)
+
 **Variante** : Version modifiée pour avoir un different degré d'approximation entre le contour de la surface et sa profondeur.
 
 #### [`approx_ellipsoide_dep.m`](https://github.com/votre-repo/approx_ellipsoide_dep.m)
 **Objectif** : Approximer les dépressions d’un MNT par des formes géométriques simples (ellipses, demi-ellipses).
+
 **Paramètres clés** :
 - `MNT` : Matrice d’élévation.
 - `shape_type` : Type de forme (`'ellipse'`, `'semi-ellipse'`).
+
 **Retourne** :
 - Paramètres des formes ajustées (centre, axes).
 - Visualisation des dépressions modélisées.
@@ -40,8 +45,10 @@ Cette bibliothèque regroupe des fonctions MATLAB dédiées au **prétraitement*
 ### 2. **Débruitage**
 #### [`debruitage_random_forest.m`](https://github.com/votre-repo/debruitage_random_forest.m)
 **Objectif** : Débruiter un MNT via un modèle Random Forest.
+
 **Paramètres clés** :
 - `mnt` : MNT bruité (matrice).
+
 **Retourne** :
 - `mnt_denoised` : MNT débruité.
 
@@ -51,7 +58,9 @@ mnt_clean = debruitage_random_forest(mnt);
 ```
 
 #### [`fonction_min_local.m`](https://github.com/votre-repo/fonction_min_local.m)
+
 **Objectif** : Identifier les minima locaux et appliquer un filtre gaussien pour le débruitage.
+
 **Paramètres clés** :
 - `su` : MNT d’entrée.
 - `T` : Seuil pour la détection des minima.
@@ -62,8 +71,10 @@ mnt_clean = debruitage_random_forest(mnt);
 ### 3. **Prétraitement**
 #### [`readFile2.m`](https://github.com/votre-repo/readFile2.m)
 **Objectif** : Lire un fichier binaire et convertir les données en matrice MNT.
+
 **Paramètres clés** :
 - `filename` : Chemin vers le fichier binaire.
+
 **Retourne** :
 - `MNT` : Matrice transposée et mise à l’échelle (facteur 1/5).
 
@@ -74,6 +85,7 @@ MNT = readFile2('data.bin');
 
 #### [`division2.m`](https://github.com/votre-repo/division2.m)
 **Objectif** : Diviser un MNT en 4 quadrants pour analyse locale.
+
 **Paramètres clés** :
 - `MNT` : Matrice d’entrée.
 - `display` : Booléen pour afficher les quadrants.
@@ -83,6 +95,7 @@ MNT = readFile2('data.bin');
 ### 4. **Fusion et Registration d’Images**
 #### [`SURFMatrice.m`](https://github.com/votre-repo/SURFMatrice.m)
 **Objectif** : Aligner et fusionner deux images MNT en se basant sur des caractéristiques SURF.
+
 **Paramètres clés** :
 - `image1`, `image2` : Matrices des images à fusionner.
 **Retourne** :
