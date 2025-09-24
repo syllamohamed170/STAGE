@@ -182,33 +182,27 @@ fused_image = SURFMatrice(image1, image2);
   *Soil surface roughness modelling with the bidirectional autocorrelation function*
   **Biosystems Engineering**, 220, 87–102.
   [DOI:10.1016/j.biosystemseng.2022.05.012](https://doi.org/10.1016/j.biosystemseng.2022.05.012)
-  > Modélisation de la rugosité des surfaces agricoles via des fonctions d'autocorrélation bidirectionnelle.
 
 - **Li & Chen (2014)**
   *Superpixel segmentation using linear spectral clustering*
   **IEEE Transactions on Image Processing**, 23(7), 3041–3051.
-  > Méthode de segmentation en superpixels basée sur le *clustering* spectral linéaire.
 
 - **Hernandez et al. (2013)**
   *Image inpainting using sparse representations and iterative methods*
   **Journal of Mathematical Imaging and Vision**, 47(1-2), 151–165.
-  > Techniques de reconstruction d'images par représentations parcimonieuses.
 
 - **Bayliss (2012)**
   *Survey of SIFT and SURF image feature detection and description techniques*
   **International Journal of Computer Vision and Image Processing**, 2(2), 1–22.
-  > Comparaison des méthodes SIFT et SURF pour la détection de caractéristiques visuelles.
 
 ## Conférence
 - **Bay et al. (2006)**
   *SURF: Speeded Up Robust Features*
   **European Conference on Computer Vision (ECCV)**, 404–417.
-  > Introduction de l'algorithme SURF pour la détection robuste et rapide de points d'intérêt.
 
 ## Stage
 - **Zeggai (2024)**
   *Étude de la variabilité spatiale d’une surface agricole à petite échelle, avec la superposition de composantes*
   **Rapport de stage de Master**, Université Paris-Saclay (LATMOS).
-  > Analyse de la variabilité spatiale des surfaces agricoles à petite échelle.
 
 ---
