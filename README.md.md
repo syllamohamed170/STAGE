@@ -157,17 +157,6 @@ fused_image = SURFMatrice(image1, image2);
 ---
 
 
-## 📝 Changelog
-
-### Version 1.0.0
-- Ajout des fonctions de segmentation et débruitage.
-- Support initial pour la lecture des fichiers binaires.
-
-
-
----
-
-
 
 ## 📚 Références
 
